@@ -1,0 +1,47 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/home/ekov/RiderProjects/Computational-Math/Lab1/Lab1.csproj",
+    "projectName": "Lab1",
+    "projectPath": "/home/ekov/RiderProjects/Computational-Math/Lab1/Lab1.csproj",
+    "outputPath": "/home/ekov/RiderProjects/Computational-Math/Lab1/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/home/ekov/RiderProjects/ConsoleMenu/ConsoleMenu/ConsoleMenu.csproj": {
+            "projectPath": "/home/ekov/RiderProjects/ConsoleMenu/ConsoleMenu/ConsoleMenu.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
