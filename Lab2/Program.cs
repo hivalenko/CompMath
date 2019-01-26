@@ -16,7 +16,7 @@ namespace Lab2
             List<object> computeResults = new List<object>();
             
             Menu trapezMenu = new MenuConsole("Sympson method", io);
-            Menu inputMenu = new MenuConsole("Input menu", io);
+            Menu inputMenu = new MenuConsole("Sympson method", io);
             Menu computeMenu = new MenuConsole("Compute menu", io);
             Menu outputMenu = new MenuConsole("Output menu", io);
             

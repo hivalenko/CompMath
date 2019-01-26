@@ -54,7 +54,7 @@ namespace Lab2
             bool mistake = false;
             do
             {
-                PrintMessage("Choose function, integral of which we would like to compute: \n 1. x^2 \n 2. 1 / x \n 3. sqrt(x)");
+                PrintMessage("Choose function, integral of which we would like to compute: \n 1. x^2 \n 2. 1 / (x^2 +1) \n 3. sin(x)");
                 s = GetConsoleInput();
                 if (!int.TryParse(s, out num) || num < 1 || num > 3)
                 {
@@ -73,10 +73,10 @@ namespace Lab2
                     function = x => x * x;
                     break;
                 case 2:
-                    function = x => 1 / x;
+                    function = x => 1 / (x*x+1);
                     break;
                 case 3:
-                    function = x => Math.Sqrt(x);
+                    function = x => Math.Sin(x);
                     break;
             }
             return function;
