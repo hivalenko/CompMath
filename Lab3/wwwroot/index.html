@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="draw.js"></script>
+    <script src="parse.js"></script>
+    <script src="util.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="info-label">
+        <h2> Лабораторная работа №3 </h2>
+        <h3> Интерполирование многочленом Ньютона</h3>
+    </div>
+</div>
+<div class="main">
+        
+    <div class="main-component-layout">
+        
+        <div class="main-component">
+            <button type="button" onclick="interpolate()">Интерполировать</button>
+            <label id="input-error-label"></label>
+            <p><input id="sin" name="type" type="radio" value="sin" checked> sin(x)*x </p>
+            <p><input id="square" name="type" type="radio" value="square"> x^2 test message</p>
+            <p><input id="e" name="type" type="radio" value="e"> e^x + 2</p>
+            <p><input type="text" id="firstX" placeholder="2"> Значение x исходной точки</p>
+            <p><input type="text" id="step" placeholder="0.3"> Шаг</p>
+            <p><input type="text" id="count" placeholder="3"> Количество точек(<=16)</p>
+            <p><input type="text" id="pointtoChange" placeholder="1"> Номер точки для сдвига</p>
+            <div class="point" style="margin-top: 10px">
+                <p> <input type="text" id="offset" placeholder="0.5"> Сдвиг</p>
+            </div>
+
+        </div>
+        
+
+    </div>
+
+    </div>
+<div class="main-component">
+    <div id="graph"></div>
+</div>
+
+</div>
+</body>
+<footer>
+    <div class="info-label">
+        <h4> Сделал: Коваленко Егор, P3217 </h4>
+    </div>
+</footer>
+
+</html>
